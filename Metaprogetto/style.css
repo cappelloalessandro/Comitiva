@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root{
+  --main: #D95113; 
+  --text: #fff; 
+  --bianco: #fbfbfb;
+  --black: #1E1E1E;
+}
+
+
+
+.fullpage-wrapper{
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  transform: translate3d(0px, -1452px, 0px);
+  transition: all 1000ms cubic-bezier(0.86, 0, 0.07, 1) 0s;
+  z-index: 2;
+}
+
+
+
+#menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  z-index: 99;
+  background-color: var(--main);
+}
+
+#menu img{
+  padding: 1rem 8rem;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  padding: 2rem 8rem;
+  height: 100vh;
+}
+
+
+.grid-connect {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 2rem 8rem;
+  height: 100vh;
+}
+
+section, .s1, .s2, .s3, .s4, .s5{
+  width: 100%;
+}
+.s1, .s3, .s5 {
+  background-color: var(--main);
+}
+.s2, .s3{
+  background-color: #FBFBFB;
+}
+.s1, .s3, .s5 {
+  background-color: var(--main);
+}
+.s2, .s4{
+  background-color: #FBFBFB;
+}
+
+.titles{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.phone-container{
+  justify-content: center;
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+
+.phone img{
+  display: block;
+
+}
+
+.ph{
+  background-image: url(img/cicerone-\(7\.png);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-self: center;
+  padding: 350px 0 0 50px;
+}
+/* prima slide */
+
+.section h2 {
+  font-size: 59px;
+  color: #fff;
+}
+section .titles p{
+  padding-top: 55px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+}
+
+  .description h3{
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #FBFBFB;
+    padding-bottom: 30px;
+  }
+  .description ul{
+    position: relative;
+    padding-left: 5%;
+  }
+  .description li{
+    position: relative;
+    font-size: 24px;
+  }
+ 
+  .users li{
+    padding: 8px;
+  }
+
+ /* Seconda slide */   
+
+  .list{
+    position: relative;
+  }
+
+  .list ul{
+    padding: 15px 0 0 25px;
+    position: relative;
+  } 
+  
+  .list ul li{
+    font-weight: 600;
+    position: relative;
+    left: 0;
+    color: var(--black);
+    list-style: none;
+    margin: 15px 0;
+    border-left: 3px solid var(--main);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .list ul li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--main);
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+    border-radius: 0 50px 50px 0;
+  
+  }
+  .list ul li:hover::before{
+    transform: scaleX(1);
+  }
+
+
+  .list ul li:hover{
+    left: 10px;
+  }
+  
+  .list ul li span{
+    position: relative;
+    padding: 14px;
+    display: inline-block;
+    z-index: 1;
+    transition: 0.5s;    
+  }
+  .list ul li span:hover{
+    color:var(--bianco);
+  }
+
+
+.s2 h2{
+  color: var(--black);
+}
+.s2 .titles p{
+  color: var(--black);
+}
+.s2 h3 {
+  color: var(--black);
+}
+
+
+/* terza slide */
+
+
+
+.grid-ciceroni {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 2rem 8rem;
+  height: 100vh;
+}
+
+.cicerone{
+  width: 290px;
+  height: 580px;
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+/* 
+.phone-absolute{
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 999;
+
+} */
+
+.swiper-slide {
+  /* text-align: center;
+  padding: 0 50px; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+}
+
+
+/* quarta slide */
+
+
+.s4{
+  background-color: #FBFBFB;
+}
+
+.s4 .titles h2{
+  color: var(--black);
+}
+
+.s4 .titles p{
+  color: var(--black);
+}
+
+.connections1{ 
+  animation: linear up;
+  position: absolute;
+  top: 35%;
+  left: 16%;
+}
+.connections2{ 
+  position: absolute;
+  top: 20%;
+  left: 36%;
+}
+.connections3{ 
+  position: absolute;
+  top: 57%;
+  left: 40%;
+}
+.connections4{ 
+  position: absolute;
+  top: 70%;
+  left: 18%;
+}
+.connections5{ 
+  position: absolute;
+  top: 50%;
+  left: 28%;
+}
+
+/* quinta slide */
+
+.buttons{
+  padding-top: 50px;
+} 
+.buttons img{
+  cursor: pointer;
+}
+
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: backInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.animate__shakeY {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 20s!important; /* don't forget to set a duration! */
+}
+
+.animate__shakeY2 {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 18s!important; /* don't forget to set a duration! */
+}
+
+
+
+@media screen and (max-width: 972px){
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+  .section h2{
+    font-size:40px;
+  }
+  section .titles p {
+      font-size: 20px;
+  }
+  .connections1, .connections2, .connections3, .connections4, .connections5{
+    width: 80px;
+    height: auto;
+  }
+  .grid-container{
+    padding: 2rem 3rem;
+  }
+
+  .description{
+    padding-bottom: 50px;
+  }
+  .description h3{
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+  
+    .description li{
+    font-size: 20px;
+  }
+  .s3 .titles p{width: 110%;}
+}
