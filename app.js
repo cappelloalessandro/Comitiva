@@ -60,7 +60,7 @@ explore.addEventListener('click', () =>{
 
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
-    slidesPerView: 4,
+    slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 30,
     grabCursor: true,

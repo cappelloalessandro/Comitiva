@@ -209,7 +209,7 @@ section .titles p {
 
 .grid-ciceroni {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -220,19 +220,23 @@ section .titles p {
 .cicerone-slide {
   width: 260px;
   height: 560px;
+  border-radius: 20px;
 }
 
 .swiper-container {
-  /* width: 66%; */
+  width: 100%;
   height: 100%;
 }
 
 
 .phone-absolute{
   position: absolute;
-  left: 310px; 
+  right: 410px;
   /* left: 225px; */
+  bottom: 75px;
   z-index: 999;
+  pointer-events: none;
+
 }
 
 .swiper-slide {
