@@ -22,13 +22,13 @@ new fullpage("#fullpage", {
 
 // https://atomiks.github.io/tippyjs/
 
-new tippy('.connections1', '.connections2', '.connections3', '.connections4', '.connections5', {
+// new tippy('.connections1', '.connections2', '.connections3', '.connections4', '.connections5', {
 
-  content: 'My tooltip!',
-  allowHTML: true,
-  arrow:true, 
-  theME:'light'
-});
+//   content: 'My tooltip!',
+//   allowHTML: true,
+//   arrow:true, 
+//   theME:'light'
+// });
 
 
 

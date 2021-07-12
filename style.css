@@ -2,18 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-:root{
-  --main: #D95113; 
-  --text: #fff; 
+:root {
+  --main: #d95113;
+  --text: #fff;
   --bianco: #fbfbfb;
-  --black: #1E1E1E;
+  --black: #1e1e1e;
 }
 
-
-
-.fullpage-wrapper{
+.fullpage-wrapper {
   height: 100%;
   position: relative;
   touch-action: none;
@@ -21,23 +19,22 @@
   transition: all 1000ms cubic-bezier(0.86, 0, 0.07, 1) 0s;
   z-index: 2;
 }
-
-
-
+/* 
 #menu {
   position: fixed;
   display: block;
   width: 100%;
-  height: 10vh;
+  height: 5vh;
   margin: 0;
   z-index: 99;
   background-color: var(--main);
+  background-color: transparent;
 }
 
-#menu img{
-  padding: 1rem 8rem;
-}
-
+#menu img {
+  padding: 0 8rem;
+  width: 150px; 
+}*/
 
 .grid-container {
   display: grid;
@@ -50,7 +47,6 @@
   height: 100vh;
 }
 
-
 .grid-connect {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -61,42 +57,49 @@
   height: 100vh;
 }
 
-section, .s1, .s2, .s3, .s4, .s5{
+section,
+.s1,
+.s2,
+.s3,
+.s4,
+.s5 {
   width: 100%;
 }
-.s1, .s3, .s5 {
+.s1,
+.s3,
+.s5 {
   background-color: var(--main);
 }
-.s2, .s3{
-  background-color: #FBFBFB;
+.s2,
+.s3 {
+  background-color: #fbfbfb;
 }
-.s1, .s3, .s5 {
+.s1,
+.s3,
+.s5 {
   background-color: var(--main);
 }
-.s2, .s4{
-  background-color: #FBFBFB;
+.s2,
+.s4 {
+  background-color: #fbfbfb;
 }
 
-.titles{
+.titles {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 }
 
-.phone-container{
+.phone-container {
+  position: relative;
   justify-content: center;
   display: flex;
   width: auto;
   align-items: center;
 }
 
-.phone img{
+.phone img {
   display: block;
-
-}
-
-.ph{
-  background-image: url(img/cicerone-\(7\.png);
 }
 
 .description {
@@ -104,7 +107,8 @@ section, .s1, .s2, .s3, .s4, .s5{
   flex-direction: column;
   color: #fff;
   align-self: center;
-  padding: 350px 0 0 50px;
+  /* padding: 350px 0 0 50px; */
+  padding: 0 0 0 50px;
 }
 /* prima slide */
 
@@ -112,106 +116,100 @@ section, .s1, .s2, .s3, .s4, .s5{
   font-size: 59px;
   color: #fff;
 }
-section .titles p{
+section .titles p {
   padding-top: 55px;
   font-size: 24px;
   line-height: 32px;
   color: #fff;
 }
 
-  .description h3{
-    font-size: 35px;
-    letter-spacing: 1px;
-    color: #FBFBFB;
-    padding-bottom: 30px;
-  }
-  .description ul{
-    position: relative;
-    padding-left: 5%;
-  }
-  .description li{
-    position: relative;
-    font-size: 24px;
-  }
- 
-  .users li{
-    padding: 8px;
-  }
+.description h3 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #fbfbfb;
+  padding-bottom: 30px;
+}
+.description ul {
+  position: relative;
+  padding-left: 5%;
+}
+.description li {
+  position: relative;
+  font-size: 24px;
+}
 
- /* Seconda slide */   
+.users li {
+  padding: 8px;
+}
 
-  .list{
-    position: relative;
-  }
+/* Seconda slide */
 
-  .list ul{
-    padding: 15px 0 0 25px;
-    position: relative;
-  } 
-  
-  .list ul li{
-    font-weight: 600;
-    position: relative;
-    left: 0;
-    color: var(--black);
-    list-style: none;
-    margin: 15px 0;
-    border-left: 3px solid var(--main);
-    transition: 0.5s;
-    cursor: pointer;
-  }
+.list {
+  position: relative;
+}
 
-  .list ul li::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: var(--main);
-    transform: scaleX(0);
-    transition: 0.5s;
-    transform-origin: left;
-    border-radius: 0 50px 50px 0;
-  
-  }
-  .list ul li:hover::before{
-    transform: scaleX(1);
-  }
+.list ul {
+  padding: 15px 0 0 25px;
+  position: relative;
+}
 
+.list ul li {
+  font-weight: 600;
+  position: relative;
+  left: 0;
+  color: var(--black);
+  list-style: none;
+  margin: 15px 0;
+  border-left: 3px solid var(--main);
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-  .list ul li:hover{
-    left: 10px;
-  }
-  
-  .list ul li span{
-    position: relative;
-    padding: 14px;
-    display: inline-block;
-    z-index: 1;
-    transition: 0.5s;    
-  }
-  .list ul li span:hover{
-    color:var(--bianco);
-  }
+.list ul li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--main);
+  transform: scaleX(0);
+  transition: 0.5s;
+  transform-origin: left;
+  border-radius: 0 50px 50px 0;
+}
+.list ul li:hover::before {
+  transform: scaleX(1);
+}
 
+.list ul li:hover {
+  left: 10px;
+}
 
-.s2 h2{
+.list ul li span {
+  position: relative;
+  padding: 14px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+.list ul li span:hover {
+  color: var(--bianco);
+}
+
+.s2 h2 {
   color: var(--black);
 }
-.s2 .titles p{
+.s2 .titles p {
   color: var(--black);
 }
 .s2 h3 {
   color: var(--black);
 }
 
-
 /* terza slide */
-
-
 
 .grid-ciceroni {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -219,25 +217,23 @@ section .titles p{
   height: 100vh;
 }
 
-.cicerone{
-  width: 290px;
-  height: 580px;
+.cicerone-slide {
+  width: 260px;
+  height: 560px;
 }
-
 
 .swiper-container {
-  width: 100%;
+  /* width: 66%; */
   height: 100%;
 }
-/* 
+
+
 .phone-absolute{
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  left: 310px; 
+  /* left: 225px; */
   z-index: 999;
-
-} */
+}
 
 .swiper-slide {
   /* text-align: center;
@@ -259,50 +255,48 @@ section .titles p{
   z-index: 0;
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets {
+.swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 10%;
   left: 0;
   width: 100%;
 }
 
-
 /* quarta slide */
 
-
-.s4{
-  background-color: #FBFBFB;
+.s4 {
+  background-color: #fbfbfb;
 }
 
-.s4 .titles h2{
+.s4 .titles h2 {
   color: var(--black);
 }
 
-.s4 .titles p{
+.s4 .titles p {
   color: var(--black);
 }
 
-.connections1{ 
+.connections1 {
   animation: linear up;
   position: absolute;
   top: 35%;
   left: 16%;
 }
-.connections2{ 
+.connections2 {
   position: absolute;
   top: 20%;
   left: 36%;
 }
-.connections3{ 
+.connections3 {
   position: absolute;
   top: 57%;
   left: 40%;
 }
-.connections4{ 
+.connections4 {
   position: absolute;
   top: 70%;
   left: 18%;
 }
-.connections5{ 
+.connections5 {
   position: absolute;
   top: 50%;
   left: 28%;
@@ -310,75 +304,71 @@ section .titles p{
 
 /* quinta slide */
 
-.buttons{
+.buttons {
   padding-top: 50px;
-} 
-.buttons img{
+}
+.buttons img {
   cursor: pointer;
 }
 
 
+/* 
 .my-element {
   display: inline-block;
   margin: 0 0.5rem;
 
-  animation: backInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
-}
+  animation: backInUp; 
+  animation-duration: 2s; }*/
+
 
 .animate__shakeY {
   display: inline-block;
   margin: 0 0.5rem;
   animation: shakeY; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 20s!important; /* don't forget to set a duration! */
+  animation-duration: 45s !important; /* don't forget to set a duration! */
 }
 
 .animate__shakeY2 {
   display: inline-block;
   margin: 0 0.5rem;
   animation: shakeY; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 18s!important; /* don't forget to set a duration! */
+  animation-duration: 40s !important; /* don't forget to set a duration! */
 }
 
-
-
-@media screen and (max-width: 972px){
-
-
+@media screen and (max-width: 972px) {
 }
 
-
-
-
-
-
-
-
-@media screen and (max-width: 1200px){
-  .section h2{
-    font-size:40px;
+@media screen and (max-width: 1200px) {
+  .section h2 {
+    font-size: 40px;
   }
   section .titles p {
-      font-size: 20px;
+    font-size: 20px;
   }
-  .connections1, .connections2, .connections3, .connections4, .connections5{
+  .connections1,
+  .connections2,
+  .connections3,
+  .connections4,
+  .connections5 {
     width: 80px;
     height: auto;
   }
-  .grid-container{
+  .grid-container {
     padding: 2rem 3rem;
   }
 
-  .description{
+  .description {
     padding-bottom: 50px;
   }
-  .description h3{
+  .description h3 {
     font-size: 30px;
     padding-bottom: 30px;
   }
-  
-    .description li{
+
+  .description li {
     font-size: 20px;
   }
-  .s3 .titles p{width: 110%;}
+  .s3 .titles p {
+    width: 110%;
+  }
 }
