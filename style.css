@@ -124,12 +124,18 @@ section .titles p {
   color: #fff;
 }
 
-.description h3 {
+
+.users{
+padding: 280px 0 0 50px;
+}
+
+.users h2{
   font-size: 35px;
   letter-spacing: 1px;
   color: #fbfbfb;
   padding-bottom: 30px;
 }
+
 .description ul {
   position: relative;
   padding-left: 5%;
@@ -139,7 +145,8 @@ section .titles p {
   font-size: 24px;
 }
 
-.users li {
+
+  .users li {
   padding: 8px;
 }
 
@@ -177,6 +184,7 @@ section .titles p {
   transform-origin: left;
   border-radius: 0 50px 50px 0;
 }
+
 .list ul li:hover::before {
   transform: scaleX(1);
 }
@@ -198,12 +206,14 @@ section .titles p {
 
 .s2 h2 {
   color: var(--black);
+
 }
 .s2 .titles p {
   color: var(--black);
 }
 .s2 h3 {
   color: var(--black);
+  font-size:35px;
 }
 
 /* terza slide */
@@ -290,7 +300,7 @@ section .titles p {
   border-radius: 4px;
   padding: 5px;
 }
-.tooltip p{
+.tooltip h6{
   font-size: 15px;
   line-height: 20px;
   font-weight: 700;
@@ -391,10 +401,88 @@ section .titles p {
 
 
 
+
+@media screen and (max-width: 400px) {
+  
+ 
+  .phone-absolute{
+    bottom: 30px;
+  }
+  .grid-connect{
+    padding: 2rem 3rem
+    }
+    .buttons{
+      padding: 0;
+      
+    }
+    .buttons img{
+      width: 125px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .phone {
+    width: 200px;  
+  }
+  .connections1 img,
+  .connections2 img,
+  .connections3 img,
+  .connections4 img,
+  .connections5 img{
+    width: 90px;
+    height: auto;
+  }
+
+  .description.list h3{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .connections1, .connections5{
+    top: 450%;
+  }
+
+}
+
+
+
 @media screen and (max-width: 972px) {
-  .grid-container{
+  .grid-container, .grid-ciceroni, .grid-connect{
     display: flex;    
     flex-direction: column;
+  }
+  section .titles p {
+    padding: 20px 0 
+  }
+  .phone-container{
+    margin: 2.5rem 0;
+  }
+  .users{
+    padding: 20px;
+    align-self: flex-end;
+  }
+  .s2 .list ul {
+    padding: 15px 0 0 25px;
+    position: relative;
+    display: flex;
+}
+.phone-absolute{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  }
+  .connections1,
+  .connections2,
+  .connections3,
+  .connections4,
+  .connections5 {
+      position: relative;
+      top: 400%;
+      left: auto;
+      right: auto;
+      margin: 0 0.8rem;
   }
 }
 
@@ -413,7 +501,7 @@ section .titles p {
     width: 80px;
     height: auto;
   }
-  .grid-container {
+  .grid-container,  .grid-ciceroni {
     padding: 2rem 3rem;
   }
 
@@ -432,3 +520,25 @@ section .titles p {
     width: 110%;
   }
 }
+@media screen and (min-width: 1350px) {
+  /* .phone-absolute {
+    right: 350px;
+    bottom: 85px;
+  } */
+
+  .connections1 {
+    top: 35%;
+    left: 3%;
+  }
+  .connections4{
+  top: 80%;
+  left: 0%;
+  }
+}
+
+/* @media screen and (min-width: 1600px) {
+  .phone-absolute {
+    right: 540px;
+    bottom: 225px;
+  }
+} */
