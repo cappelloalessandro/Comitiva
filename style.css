@@ -5,6 +5,7 @@
   font-family: 'Roboto', sans-serif;
 }
 :root {
+  --swiper-theme-color: #75ad35;
   --main: #d95113;
   --text: #fff;
   --bianco: #fbfbfb;
@@ -228,15 +229,13 @@ section .titles p {
   height: 100%;
 }
 
-
-.phone-absolute{
+.phone-absolute {
   position: absolute;
   right: 410px;
   /* left: 225px; */
   bottom: 75px;
   z-index: 999;
   pointer-events: none;
-
 }
 
 .swiper-slide {
@@ -279,33 +278,93 @@ section .titles p {
   color: var(--black);
 }
 
+
+.tooltip{
+  background-color: var(--main);
+  width: 200px;
+  height: auto;
+  bottom: 150px;
+  left: 20px;
+  display: none;
+  position: absolute;
+  border-radius: 4px;
+  padding: 5px;
+}
+.tooltip p{
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--bianco);
+}
+
+.connections1:hover .tooltip{
+  display: block;
+}
+.connections2:hover .tooltip{
+  display: block;
+}
+.connections3:hover .tooltip{
+  display: block;
+}
+.connections4:hover .tooltip{
+  display: block;
+}
+.connections5:hover .tooltip{
+  display: block;
+  transition: linear 2s;
+}
+
+/* old-lady */
 .connections1 {
   animation: linear up;
   position: absolute;
   top: 35%;
-  left: 16%;
+  left:   6%;
 }
+
+/* old-man */
 .connections2 {
   position: absolute;
-  top: 20%;
+  top: 16%;
   left: 36%;
 }
+
+/* girl */
 .connections3 {
   position: absolute;
   top: 57%;
-  left: 40%;
+  left: 60%;
 }
+
+/* other-girl */
 .connections4 {
   position: absolute;
   top: 70%;
-  left: 18%;
+  left: 11%;
 }
+
+.connections4:hover .tooltip {
+  display: block;
+  transition: linear 2s;
+  position: absolute;
+  bottom: 120px;
+  left: 40px;
+}
+
+/* dude */
 .connections5 {
   position: absolute;
   top: 50%;
-  left: 28%;
+  left: 32%;
 }
 
+.connections5:hover .tooltip {
+  display: block;
+  transition: linear 2s;
+  position: absolute;
+  bottom: 120px;
+  left: 40px;
+}
 /* quinta slide */
 
 .buttons {
@@ -314,15 +373,6 @@ section .titles p {
 .buttons img {
   cursor: pointer;
 }
-
-
-/* 
-.my-element {
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: backInUp; 
-  animation-duration: 2s; }*/
 
 
 .animate__shakeY {
@@ -339,7 +389,13 @@ section .titles p {
   animation-duration: 40s !important; /* don't forget to set a duration! */
 }
 
+
+
 @media screen and (max-width: 972px) {
+  .grid-container{
+    display: flex;    
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1200px) {

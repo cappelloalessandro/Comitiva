@@ -7,6 +7,7 @@ new fullpage("#fullpage", {
   autoScrolling: true,
   navigation: true,
   css3: true,
+
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
     const title = section.querySelector("h2");
@@ -31,9 +32,6 @@ new fullpage("#fullpage", {
 // });
 
 
-
-
-
 let img = document.querySelector('#phone-change');
 let profile = document.querySelector('#profile');
 let region = document.querySelector('#region');
@@ -55,7 +53,6 @@ geolocal.addEventListener('click', () =>{
 explore.addEventListener('click', () =>{
   img.src = 'img/explore.png'
 })
-
 
 
 const swiper = new Swiper('.swiper-container', {
