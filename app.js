@@ -56,21 +56,7 @@ const swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    
-    breakpoints: {
-      // when window width is >= 320px
-      280: {
-        slidesPerView: 1,
-        // spaceBetween:40
-      },
-    },
-    },
-  }
+    }
 });
 
 
