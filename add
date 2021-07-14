@@ -1,44 +1,86 @@
-<div class="grid-connect">
+.tooltip{
+  background-color: var(--main);
+  width: 200px;
+  height: auto;
+  bottom: 150px;
+  left: 20px;
+  display: none;
+  position: absolute;
+  border-radius: 4px;
+  padding: 5px;
+}
+.tooltip p{
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--bianco);
+}
 
+.connections1:hover .tooltip{
+  display: block;
+}
+.connections2:hover .tooltip{
+  display: block;
+}
+.connections3:hover .tooltip{
+  display: block;
+}
+.connections4:hover .tooltip{
+  display: block;
+}
+.connections5:hover .tooltip{
+  display: block;
+  transition: linear 2s;
+}
 
-        <div class="phone-container">
+/* old-lady */
+.connections1 {
+  animation: linear up;
+  position: absolute;
+  top: 35%;
+  left:   6%;
+}
 
-          <div class="connections1 animate__animated animate__infinite	infinite animate__shakeY">
-            <!-- old-lady -->
-            <div class="tooltip">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
-            </div>
-              <img src="img/old-lady.png" alt="old-lady">
-          </div>
+/* old-man */
+.connections2 {
+  position: absolute;
+  top: 16%;
+  left: 36%;
+}
 
-          <div class="connections2 animate__animated animate__infinite	infinite animate__shakeY2">
-            <!-- old-man -->
-            <div class="tooltip">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
-            </div>
-              <img src="img/old-man.png" alt="old-lady">
-          </div>
+/* girl */
+.connections3 {
+  position: absolute;
+  top: 57%;
+  left: 60%;
+}
 
-          <div class="connections3 animate__animated animate__infinite	infinite animate__shakeY">
-            <!-- girl -->
-            <div class="tooltip">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
-            </div>
-              <img src="img/girl.png" alt="old-lady">
-          </div>
+/* other-girl */
+.connections4 {
+  position: absolute;
+  top: 70%;
+  left: 11%;
+}
 
-          <div class="connections4 animate__animated animate__infinite	infinite animate__shakeY">
-            
-            <div class="tooltip">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
-            </div>
-              <img src="img/other-girl.png" alt="old-lady">
-          </div>
+.connections4:hover .tooltip {
+  display: block;
+  transition: linear 2s;
+  position: absolute;
+  bottom: 120px;
+  left: 40px;
+}
 
-          <div class="connections5 animate__animated animate__infinite	infinite animate__shakeY2">
-            <div class="tooltip">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
-            </div>
-              <img src="img/dude.png" alt="old-lady">
-          </div>
-        </div>
+/* dude */
+.connections5 {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+}
+
+.connections5:hover .tooltip {
+  display: block;
+  transition: linear 2s;
+  position: absolute;
+  bottom: 120px;
+  left: 40px;
+}
