@@ -2,7 +2,7 @@ TweenMax.defaultEase = Linear.easeOut;
 
 new fullpage("#fullpage", {
   //options 
-  //sponsiveWidth: 800,
+  // responsiveWidth: 800,
   menu: '#menu',
   verticalCentered:false, //per mettere il flex
   autoScrolling: true,
