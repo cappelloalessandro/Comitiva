@@ -640,6 +640,7 @@ i{
 
 
 @media screen and (max-width:800px){
+  #fullpage{overflow-y: scroll;}
   .s1 {height: 1000px!important;}  
   .s2 {height: 1220px!important;}  
   .s3 {height: 1000px!important;}  
