@@ -8,6 +8,7 @@ new fullpage("#fullpage", {
   autoScrolling: true,
   navigation: true,
   css3: true,
+  
 
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
@@ -52,11 +53,37 @@ const swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     spaceBetween: 30,
     grabCursor: true,
-   
+
+  //   slidesPerView: 1,
+  // spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    },
+    // when window width is >= 640px
+    840: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },   
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     }
+
 });
 
 

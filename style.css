@@ -272,13 +272,15 @@ padding: 280px 0 0 50px;
   height: 100%;
 }
 
-.phone-absolute {
+/* .phone-absolute {
   position: absolute;
   right: 410px;
   bottom: 75px;
   z-index: 999;
   pointer-events: none;
-}
+} */
+
+/* giusto */
 .phone-absolute {
   position: absolute;
   left: 50%;
@@ -339,12 +341,18 @@ padding: 280px 0 0 50px;
   border-radius: 4px;
   padding: 5px;
   transition: 1s;
+  z-index: 10;
 }
 .tooltip h5{
   font-size: 15px;
   line-height: 25px;
   font-weight: 700;
   color: var(--bianco);
+}
+
+.top-left{
+  position: absolute;
+  
 }
 
 .tooltip h6{
@@ -505,28 +513,28 @@ i{
 
 
 /* POSIZIONE TELEFONO SLIDER 1200 x 992 */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .phone-absolute {
     right: 270px;
     bottom: 165px;
   }
-}
-
+} */
+/* 
 @media screen and (min-width: 1350px) {
   .phone-absolute {
     right: 350px;
     bottom: 85px;
   }
-}
+} */
 
 
 /* POSIZIONE TELEFONO SLIDER 1920PX x 1210 */
-@media screen and (min-width: 1600px) {
+/* @media screen and (min-width: 1600px) {
   .phone-absolute {
     right: 518px;
     bottom: 215px;
   }
-}
+} */
 
 
 
@@ -574,6 +582,7 @@ i{
     }
   }
 
+  /* giusto */
 @media screen and (min-width: 1024px) and (max-width:1500px){
   .phone-absolute{
     width: 225px;
@@ -583,6 +592,7 @@ i{
     height: auto;
   }
 }
+
 
 
 @media screen and (max-width: 1024px) {
@@ -626,11 +636,6 @@ i{
     padding: 20px 0 
   }
 
-  .phone-absolute {
-    right: 36%;
-    bottom: 24%;
-  } 
-
   .phone-container{
     margin: 2.5rem 0;
   }
@@ -662,17 +667,25 @@ i{
   .s2 {height: 100vh!important;}  
   .s3 {height: 100vh!important;}  
   .s4 {height: 100vh!important;}  
-  .s5 {height: 100vh!important;}  
+  .s5 {height: 100vh!important;}
+  
+  .phone-absolute{
+    width: 225px;
+  }
+  .cicerone-slide{
+    width: 200px;
+    height: auto;
+  }
+}
 
 
 
 
 
 @media screen and (max-width:768px) {
-  .phone-absolute{
-    right: 31%;
-    bottom: 12%;
-  }  
+ 
+  
+
   .connections2{
     top: 46%;
     left: 60%;
@@ -689,19 +702,53 @@ i{
   }
 }
 
+@media screen and (max-width: 767px){
+  .section h2 {
+    font-size: 28px;
+  }
+
+  .users{
+    margin-top: -30px;
+    padding: 0;
+  }
+  .users h3{
+    padding-bottom: 10px;    
+  }
+  .phone{
+    width: 170px;
+  }
+  .circle{
+    width: 260px;
+    height: 260px;
+  }
+
+  .no-phone-view{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .no-phone-view li{
+    width: 48%;
+    font-size: 16px;
+  }
+  .grid-esperienze .description h3{
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}
 
 @media screen and (max-width: 600px) {
 
-  .phone-absolute {
+  /* .phone-absolute {
     width: 170px;
     bottom: 17%;
     right: 36%;
-  } 
-  
+  }  */
+/*   
   .cicerone-slide{
     width: 100%;
     height: auto;
-  }
+  } */
 
   h2, h3{
     font-size :25px;
@@ -724,9 +771,6 @@ i{
     padding: 0;
     margin: 0;
   }
-  .connections1, .connections5{
-    top: 450%;
-  }
 
   .s5 .phone{
     width: 200px;
@@ -738,7 +782,7 @@ i{
 }
 
 /* 414 x 853 dp one plus 9 */
-@media screen and (max-width: 414px){
+/* @media screen and (max-width: 414px){
   .phone-absolute {
     width: 116px;
     position: absolute;
@@ -749,15 +793,15 @@ i{
     width: 120%;
     height: auto;
   }
-}
+} */
 
 
 @media screen and (max-width: 400px) {
 
-  .cicerone-slide {
+  /* .cicerone-slide {
     width: 105px;
     height: auto;
-  }
+  } */
   
   .phone{
     width: 150px;
@@ -777,7 +821,7 @@ i{
     .buttons img{
       width: 125px;
     }
-    .phone-absolute {
+    /* .phone-absolute {
         width: 120px;
         position: absolute;
         left: 35%;
@@ -786,12 +830,12 @@ i{
   .cicerone-slide {
     width: 105px;
     height: auto;
-}
+} */
 }
 
 
 /* 384 x 853 dp one plus 9 */
-@media screen and (max-width: 384px){
+/* @media screen and (max-width: 384px){
   .phone-absolute {
     width: 120px;
     position: absolute;
@@ -799,4 +843,4 @@ i{
     bottom: 20%;
   }
   
-}
+} */
