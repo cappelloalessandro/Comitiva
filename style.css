@@ -37,7 +37,7 @@
   width: 150px; 
 }*/
 
-.grid-container {
+.grid-container, .grid-esperienze {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -47,6 +47,8 @@
   padding: 2rem 8rem;
   height: 100vh;
 }
+
+.grid-esperienze{display: grid;}
 
 .grid-connect {
   display: grid;
@@ -152,6 +154,8 @@ padding: 280px 0 0 50px;
 
 /* Seconda slide */
 
+
+
 .list {
   position: relative;
 }
@@ -204,6 +208,14 @@ padding: 280px 0 0 50px;
   color: var(--bianco);
 }
 
+.no-phone-view{
+  display: block;
+}
+
+.phone-view{
+  display: none;
+}
+
 .s2 h2 {
   color: var(--black);
 
@@ -249,9 +261,6 @@ padding: 280px 0 0 50px;
 }
 
 .swiper-slide {
-  /* text-align: center;
-  padding: 0 50px; */
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,13 +409,19 @@ padding: 280px 0 0 50px;
 }
 
 
-
+@media screen and (min-width:400px){
+ 
+}
 
 @media screen and (max-width: 400px) {
   
  
   .phone-absolute{
     bottom: 30px;
+  }
+  .phone{
+    width: 150px;
+    height: auto;
   }
   .grid-connect{
     padding: 2rem 3rem
@@ -418,12 +433,22 @@ padding: 280px 0 0 50px;
     .buttons img{
       width: 125px;
     }
-}
+    .phone-absolute {
+      width: 135px;
+      position: absolute;
+      left: 120px;
+      margin: auto;
+  }
+  .cicerone-slide {
+    width: 130px;
+    height: auto;
+}}
 
 @media screen and (max-width: 600px) {
   .phone {
-    width: 200px;  
+    width: 150px;  
   }
+  
   .connections1 img,
   .connections2 img,
   .connections3 img,
@@ -432,7 +457,9 @@ padding: 280px 0 0 50px;
     width: 90px;
     height: auto;
   }
-
+  .s2 .description{
+    padding: 0;
+  }
   .description.list h3{
     display: block;
     text-align: center;
@@ -442,16 +469,46 @@ padding: 280px 0 0 50px;
   .connections1, .connections5{
     top: 450%;
   }
+  .grid-esperienze .description li{
+    font-size: 12px;
+  }
 
+ 
 }
 
 
 
 @media screen and (max-width: 972px) {
-  .grid-container, .grid-ciceroni, .grid-connect{
+  
+  
+
+  .phone {
+    width: 200px;  
+  }
+  .no-phone-view{
+    display: none;
+  }
+  .no-phone-view{
+    display: block;
+  }
+  .grid-container, .grid-ciceroni, .grid-connect, .grid-esperienze{
     display: flex;    
     flex-direction: column;
   }
+  .grid-connect{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  
+  .grid-esperienze .description li{
+    font-size: 14px;
+  }
+
+  .facile-intuitivo .phone{
+    width: 300px;
+    display: none;
+  }
+
   section .titles p {
     padding: 20px 0 
   }
@@ -462,24 +519,26 @@ padding: 280px 0 0 50px;
     padding: 20px;
     align-self: flex-end;
   }
-  .s2 .list ul {
+  /* .s2 .list ul {
     padding: 15px 0 0 25px;
     position: relative;
     display: flex;
-}
-.phone-absolute{
+} */
+
+/* .phone-absolute{
+  width: 50px;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  }
+  } */
   .connections1,
   .connections2,
   .connections3,
   .connections4,
   .connections5 {
       position: relative;
-      top: 400%;
+      /* top: 600%; */
       left: auto;
       right: auto;
       margin: 0 0.8rem;
@@ -487,6 +546,11 @@ padding: 280px 0 0 50px;
 }
 
 @media screen and (max-width: 1200px) {
+
+  .s3 .description {
+    display: none;
+    padding: 0 0 0 50px;
+  }
   .section h2 {
     font-size: 40px;
   }
@@ -501,10 +565,18 @@ padding: 280px 0 0 50px;
     width: 80px;
     height: auto;
   }
-  .grid-container,  .grid-ciceroni {
+  .grid-container,  .grid-ciceroni, .grid-connect, .grid-esperienze {
     padding: 2rem 3rem;
   }
 
+  .grid-esperienze .description{
+    padding: 0;
+  }
+
+  .grid-esperienze .description h3{
+  padding-left: 30px;
+  padding-bottom: 0;
+}
   .description {
     padding-bottom: 50px;
   }
@@ -519,6 +591,8 @@ padding: 280px 0 0 50px;
   .s3 .titles p {
     width: 110%;
   }
+
+
 }
 @media screen and (min-width: 1350px) {
   /* .phone-absolute {
@@ -526,6 +600,7 @@ padding: 280px 0 0 50px;
     bottom: 85px;
   } */
 
+ 
   .connections1 {
     top: 35%;
     left: 3%;
