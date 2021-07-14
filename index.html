@@ -27,15 +27,15 @@
       <div class="grid-container">
         <div class="titles">
           <h2>Un modo nuovo di esplorare.</h2>
-          <p>Piccole realtà urbane tutte da scoprire.</p>
+          <p>Piccole realtà urbane tutte <br>da scoprire.</p>
         </div>
 
         <div class="phone-container">
-          <img class="phone animate__animated animate__backInUp" src="img/comitiva.png" alt="phone">
+          <img class="phone animate__animated phone-up-entrance animate__backInUp" src="img/comitiva.png" alt="phone">
         </div>
 
         <div class="description users">
-          <h2>Comitiva è per</h2>
+          <h3>Comitiva è per</h2>
             <ul>
               <li>Viaggiatori</li>
               <li>Ciceroni</li>
@@ -47,24 +47,33 @@
 
     <section class="section s2">
 
-      <div class="grid-container ">
-        <div class="titles">
+      <div class="grid-esperienze">
+        <div class=" titles">
           <h2>Fai tesoro di nuove esperienze</h2>
           <p>Sia che tu sia di passaggio o del posto, Comitiva ti aiuta in ogni momento.</p>
         </div>
+        <div class="phone-container ">
+            <!-- <div class="facile-intuitivo"> -->
+            <img id="phone-change" class="phone" src="img/phone-with-logo.png" alt="schermate interattive della nostra applicazione">
+          </div>
+          <div class="description list">
+            <h3>Facile e intuitivo</h2>
+              
+              <ul class="no-phone-view">
+                <li><span id="profile">Crea il tuo profilo</span></li>
+                <li><span id="region">Scegli la regione</span></li>
+                <li><span id="geolocal">Attiva la geolocalizzazione</span></li>
+                <li><span id="explore">Inizia a esplorare</span></li>
+              </ul>
 
-        <div class="phone-container">
-          <img id="phone-change" class="phone" src="img/phone-with-logo.png" alt="schermate interattive della nostra applicazione">
-        </div>
-        <div class="description list">
-          <h3>Facile e intuitivo</h2>
-            <ul>
-              <li><span id="profile">Crea il tuo profilo</span></li>
-              <li><span id="region">Scegli la regione</span></li>
-              <li><span id="geolocal">Attiva la geolocalizzazione</span></li>
-              <li><span id="explore">Inizia a esplorare</span></li>
-            </ul>
-        </div>
+              <ul class="phone-view">
+                <li id="profile">Crea il tuo profilo</span></li>
+                <li id="region">Scegli la regione</span></li>
+                <li id="geolocal">Attiva la geolocalizzazione</span></li>
+                <li id="explore">Inizia a esplorare</span></li>
+              </ul>
+          </div>
+          <!-- </div> -->
       </div>
     </section>
 
@@ -81,7 +90,9 @@
           <p>In qualunque posto tu vada avrai la possibilità di interagire con i ciceroni del luogo.</p>
         </div>
 
+        <!-- <div class="phone-container"> -->
           <img class="phone-absolute" draggable="false" src="img/phone-case.png" alt="telefono">
+        <!-- </div> -->
 
         <!-- Slider main container -->
         <div class="swiper-container">
@@ -96,7 +107,7 @@
             <div class="swiper-slide"><img class="cicerone-slide" src="img/cicerone-(5).png" alt=""></div>
             <div class="swiper-slide"><img class="cicerone-slide" src="img/cicerone-(6).png" alt=""></div>
           </div>
-          <!-- pagination -->
+          <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
 
@@ -110,45 +121,16 @@
 
 
         <div class="phone-container">
-
-          <div class="connections1 animate__animated animate__infinite	infinite animate__shakeY">
-            <!-- old-lady -->
-            <div class="tooltip">
-              <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h6>
-            </div>
-              <img src="img/old-lady.png" alt="old-lady">
-          </div>
-
-          <div class="connections2 animate__animated animate__infinite	infinite animate__shakeY2">
-            <!-- old-man -->
-            <div class="tooltip">
-              <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h6>
-            </div>
-              <img src="img/old-man.png" alt="old-lady">
-          </div>
-
-          <div class="connections3 animate__animated animate__infinite	infinite animate__shakeY">
-            <!-- girl -->
-            <div class="tooltip">
-              <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h6>
-            </div>
-              <img src="img/girl.png" alt="old-lady">
-          </div>
-
-          <div class="connections4 animate__animated animate__infinite	infinite animate__shakeY">
-            
-            <div class="tooltip">
-              <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h6>
-            </div>
-              <img src="img/other-girl.png" alt="old-lady">
-          </div>
-
-          <div class="connections5 animate__animated animate__infinite	infinite animate__shakeY2">
-            <div class="tooltip">
-              <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h6>
-            </div>
-              <img src="img/dude.png" alt="old-lady">
-          </div>
+          <img class="connections1 animate__animated animate__infinite	infinite animate__shakeY" id="myButton"
+            src="img/old-lady.png" alt="old-lady">
+          <img class="connections2 animate__animated animate__infinite	infinite animate__shakeY" src="img/old-man.png"
+            alt="old-lady">
+          <img class="connections3 animate__animated animate__infinite	infinite animate__shakeY2" src="img/girl.png"
+            alt="old-lady">
+          <img class="connections4 animate__animated animate__infinite	infinite animate__shakeY"
+            src="img/other-girl.png" alt="old-lady">
+          <img class="connections5 animate__animated animate__infinite	infinite animate__shakeY2" src="img/dude.png"
+            alt="old-lady">
         </div>
 
         <div class="titles">
@@ -171,12 +153,12 @@
 
       <div class="grid-connect">
         <div class="phone-container">
-          <img class="ph" src="img/phone-with-logo.png" alt="final">
+          <img class="phone" src="img/phone-with-logo.png" alt="final">
         </div>
         <div class="titles">
           <div>
             <h2>Cosa aspetti?</h2>
-            <p>Scarica subito l’app e connettiti a nuove esperienze.</p>
+            <p>Scarica subito l’app e connettiti a<br> nuove esperienze.</p>
           </div>
           <div class="buttons">
             <img src="img/badge_iOS.png" alt="">
@@ -202,15 +184,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
 
-  <!-- Development
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
-Production 
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script> -->
-
-
+    
 
   <script src="./fullpage.min.js"></script>
 
