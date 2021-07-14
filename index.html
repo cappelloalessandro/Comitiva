@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./fullpage.min.css" />
@@ -24,14 +28,15 @@
 
     <section class="section s1">
 
-      <div class="grid-container">
+      <div class="grid-container ">
         <div class="titles">
           <h2>Un modo nuovo di esplorare.</h2>
-          <p>Piccole realtà urbane tutte <br>da scoprire.</p>
+          <p>Piccole realtà urbane tutte da scoprire.</p>
         </div>
 
         <div class="phone-container">
           <img class="phone animate__animated phone-up-entrance animate__backInUp" src="img/comitiva.png" alt="phone">
+          <div class="circle"></div>
         </div>
 
         <div class="description users">
@@ -55,6 +60,7 @@
         <div class="phone-container ">
             <!-- <div class="facile-intuitivo"> -->
             <img id="phone-change" class="phone" src="img/phone-with-logo.png" alt="schermate interattive della nostra applicazione">
+            <div class="circle"></div>
           </div>
           <div class="description list">
             <h3>Facile e intuitivo</h2>
@@ -83,7 +89,7 @@
 
 
     <!-- swipe con i ciceroni -->
-    <section class="section s3">
+    <section class="section fp-auto-height-responsive s3">
       <div class="grid-ciceroni">
         <div class="titles">
           <h2>Conosci i tuoi ciceroni con uno swipe </h2>
@@ -92,6 +98,7 @@
 
         <!-- <div class="phone-container"> -->
           <img class="phone-absolute" draggable="false" src="img/phone-case.png" alt="telefono">
+          
         <!-- </div> -->
 
         <!-- Slider main container -->
@@ -121,22 +128,83 @@
 
 
         <div class="phone-container">
-          <img class="connections1 animate__animated animate__infinite	infinite animate__shakeY" id="myButton"
+
+          <div class="connections1 animate__animated animate__infinite	infinite animate__shakeY1">
+            <!-- old-lady -->
+            <div class="tooltip">
+              <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h6>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <h6>loredana Pepponi</h6>
+            </div>
+              <img src="img/old-lady.png" alt="old-lady">
+          </div>
+
+          <div class="connections2 animate__animated animate__infinite	infinite animate__shakeY2">
+            <!-- old-man -->
+            <div class="tooltip">
+              <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h5>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <h6>loredana Pepponi</h6>
+            </div>
+              <img src="img/old-man.png" alt="old-lady">
+          </div>
+
+          <div class="connections3 animate__animated animate__infinite	infinite animate__shakeY">
+            <!-- girl -->
+            <div class="tooltip">
+              <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h5>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <h6>loredana Pepponi</h6>
+            </div>
+              <img src="img/girl.png" alt="old-lady">
+          </div>
+
+          <div class="connections4 animate__animated animate__infinite	infinite animate__shakeY">
+            
+            <div class="tooltip">
+              <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h5>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <h6>loredana Pepponi</h6>
+            </div>
+              <img src="img/other-girl.png" alt="old-lady">
+          </div>
+
+          <div class="connections5 animate__animated animate__infinite	infinite animate__shakeY1">
+            <div class="tooltip">
+              <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</h5>
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <h6>loredana Pepponi</h6>
+            </div>
+              <img src="img/dude.png" alt="old-lady">
+          </div>
+        </div>
+
+        <!-- <div class="phone-container">
+          <img class="connections1 animate__animated animate__infinite	infinite animate__shakeY1" id="myButton"
             src="img/old-lady.png" alt="old-lady">
-          <img class="connections2 animate__animated animate__infinite	infinite animate__shakeY" src="img/old-man.png"
+          <img class="connections2 animate__animated animate__infinite	infinite animate__shakeY2" src="img/old-man.png"
             alt="old-lady">
-          <img class="connections3 animate__animated animate__infinite	infinite animate__shakeY2" src="img/girl.png"
+          <img class="connections3 animate__animated animate__infinite	infinite animate__shakeY1" src="img/girl.png"
             alt="old-lady">
           <img class="connections4 animate__animated animate__infinite	infinite animate__shakeY"
             src="img/other-girl.png" alt="old-lady">
           <img class="connections5 animate__animated animate__infinite	infinite animate__shakeY2" src="img/dude.png"
             alt="old-lady">
-        </div>
+        </div> -->
 
         <div class="titles">
           <h2>Crea sempre connessioni.</h2>
-          <p>Ogni nuovo luogo sarà la tua casa.<br>
-            Con Comitiva non sarai più solo un turista.</p>
+          <p>Ogni nuovo luogo sarà la tua casa.<br>Con Comitiva non sarai più solo un turista.</p>
         </div>
 
       </div>
@@ -153,16 +221,19 @@
 
       <div class="grid-connect">
         <div class="phone-container">
-          <img class="phone" src="img/phone-with-logo.png" alt="final">
+          <img class="phone" src="img/telefoni-finali.png" alt="final">
+          <div class="circle final"></div>
         </div>
         <div class="titles">
           <div>
             <h2>Cosa aspetti?</h2>
-            <p>Scarica subito l’app e connettiti a<br> nuove esperienze.</p>
+            <p>Scarica subito l’app e connettiti a nuove esperienze.</p>
           </div>
           <div class="buttons">
-            <img src="img/badge_iOS.png" alt="">
-            <img src="img/badge_android.png" alt="">
+            <a class="btn">
+              <i class="fab fa-google-play"></i> Scarica per Android</a>
+          <a class="btn">
+              <i class="fab fa-apple"></i>Scarica per Ios</a>
           </div>
         </div>
 
@@ -183,8 +254,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-
-    
 
   <script src="./fullpage.min.js"></script>
 

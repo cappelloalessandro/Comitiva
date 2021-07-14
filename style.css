@@ -20,6 +20,22 @@
   transition: all 1000ms cubic-bezier(0.86, 0, 0.07, 1) 0s;
   z-index: 2;
 }
+
+
+.circle{
+  background-color: var(--bianco);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.s2 .circle{
+  background-color: var(--main);
+}
+
+
 /* 
 #menu {
   position: fixed;
@@ -47,6 +63,7 @@
   padding: 2rem 8rem;
   height: 100vh;
 }
+
 
 .grid-esperienze{display: grid;}
 
@@ -94,13 +111,16 @@ section,
 }
 
 .phone-container {
-  position: relative;
+  /* position: relative; */
   justify-content: center;
   display: flex;
   width: auto;
   align-items: center;
 }
 
+.phone{
+  z-index: 2;
+}
 .phone img {
   display: block;
 }
@@ -300,7 +320,7 @@ padding: 280px 0 0 50px;
 
 .tooltip{
   background-color: var(--main);
-  width: 200px;
+  width: 230px;
   height: auto;
   bottom: 150px;
   left: 20px;
@@ -308,12 +328,30 @@ padding: 280px 0 0 50px;
   position: absolute;
   border-radius: 4px;
   padding: 5px;
+  transition: 1s;
 }
-.tooltip h6{
+.tooltip h5{
   font-size: 15px;
+  line-height: 25px;
+  font-weight: 700;
+  color: var(--bianco);
+}
+
+.tooltip h6{
+  padding: 5px 0;
+  font-size: 13px;
   line-height: 20px;
   font-weight: 700;
   color: var(--bianco);
+}
+.stars{
+  padding: 5px 0;
+  display: inline;
+}
+i{
+  color: var(--bianco);
+  padding: 2px;  
+  font-size: 10px;
 }
 
 .connections1:hover .tooltip{
@@ -344,7 +382,7 @@ padding: 280px 0 0 50px;
 /* old-man */
 .connections2 {
   position: absolute;
-  top: 16%;
+  top: 22%;
   left: 36%;
 }
 
@@ -352,7 +390,7 @@ padding: 280px 0 0 50px;
 .connections3 {
   position: absolute;
   top: 57%;
-  left: 60%;
+  left: 40%;
 }
 
 /* other-girl */
@@ -374,7 +412,7 @@ padding: 280px 0 0 50px;
 .connections5 {
   position: absolute;
   top: 50%;
-  left: 32%;
+  left: 26%;
 }
 
 .connections5:hover .tooltip {
@@ -384,13 +422,50 @@ padding: 280px 0 0 50px;
   bottom: 120px;
   left: 40px;
 }
+
+
 /* quinta slide */
+
+.s5 .circle{
+  width: 500px;
+  height: 500px;
+}
+.s5 .phone{
+  width: 450px;
+}
 
 .buttons {
   padding-top: 50px;
 }
-.buttons img {
+
+.btn{
   cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: var(--bianco);
+  color: var(--main);
+  font-weight: 700;
+  border-radius: 25px;
+  border-style: none;
+  margin-right: 25px;
+  transition: 0.4s;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.btn i{
+  color: var(--main);
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.btn:hover{
+  background-color: #75ad35;
+  color: var(--bianco);
+}
+.btn>i:hover{
+  color: var(--bianco);
 }
 
 
@@ -401,6 +476,13 @@ padding: 280px 0 0 50px;
   animation-duration: 45s !important; /* don't forget to set a duration! */
 }
 
+.animate__shakeY1 {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 42s !important; /* don't forget to set a duration! */
+}
+
 .animate__shakeY2 {
   display: inline-block;
   margin: 0 0.5rem;
@@ -409,51 +491,204 @@ padding: 280px 0 0 50px;
 }
 
 
-@media screen and (min-width:400px){
- 
+
+/* MEDIA */
+
+
+/* POSIZIONE TELEFONO SLIDER 1200 x 992 */
+@media screen and (min-width: 1200px) {
+  .phone-absolute {
+    right: 270px;
+    bottom: 165px;
+  }
 }
 
-@media screen and (max-width: 400px) {
-  
- 
-  .phone-absolute{
-    bottom: 30px;
+@media screen and (min-width: 1350px) {
+  .phone-absolute {
+    right: 350px;
+    bottom: 85px;
   }
-  .phone{
-    width: 150px;
-    height: auto;
+}
+
+
+/* POSIZIONE TELEFONO SLIDER 1920PX x 1210 */
+@media screen and (min-width: 1600px) {
+  .phone-absolute {
+    right: 518px;
+    bottom: 215px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .s3 .description {
+      display: none;
+      padding: 0 0 0 50px;
+    }
+    .section h2 {
+      font-size: 40px;
+    }
+    section .titles p {
+      font-size: 20px;
+    }
+    .connections1,
+    .connections2,
+    .connections3,
+    .connections4,
+    .connections5 {
+      width: 80px;
+      height: auto;
+    }
+    .grid-container,  .grid-ciceroni, .grid-connect, .grid-esperienze {
+      padding: 2rem 3rem;
+    }
+  
+    .grid-esperienze .description{
+      padding: 0;
+    }
+  
+    .grid-esperienze .description h3{
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+    .description {
+      padding-bottom: 50px;
+    }
+    .description h3 {
+      font-size: 30px;
+      padding-bottom: 30px;
+    }
+  
+    .description li {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+@media screen and (max-width: 1024px) {
+  
+  .s3 .titles p {
+    width: 100%;
+}
+
+.s5 .circle{
+  width: 300px;
+  height: 300px;
+}
+
+  .phone {
+    width: 250px;  
+  }
+  .no-phone-view{
+    display: none;
+  }
+  .no-phone-view{
+    display: block;
+  }
+  .grid-container, .grid-ciceroni, .grid-connect, .grid-esperienze{
+    display: flex;    
+    flex-direction: column;
   }
   .grid-connect{
-    padding: 2rem 3rem
-    }
-    .buttons{
-      padding: 0;
-      
-    }
-    .buttons img{
-      width: 125px;
-    }
-    .phone-absolute {
-      width: 125px;
-      position: absolute;
-      left: 115px;
-      bottom: 100px;
-      margin: auto;
-  }
-  .cicerone-slide {
-    width: 105px;
+    flex-direction: column-reverse;
     height: auto;
-}
-.s3 .titles p {
-  display: none;
-}
-}
-
-@media screen and (max-width: 600px) {
-  .phone {
-    width: 150px;  
   }
   
+  .grid-esperienze .list ul, h2{
+    padding: 0;
+  }
+  .facile-intuitivo .phone{
+    width: 300px;
+    display: none;
+  }
+
+  section .titles p {
+    padding: 20px 0 
+  }
+
+  .phone-absolute {
+    right: 36%;
+    bottom: 24%;
+  } 
+
+  .phone-container{
+    margin: 2.5rem 0;
+  }
+  .users{
+    padding: 20px;
+    align-self: flex-end;
+  }
+
+
+  .connections2{
+    top: 46%;
+    left: 50%;
+  }
+
+  .connections3{
+    top: 76%;
+    left: 60%;
+  }
+
+  .connections5{
+    top: 58%;
+    left: 30%;
+  }
+}
+
+
+@media screen and (max-width:800px){
+  .s1 {height: 1000px!important;}  
+  .s2 {height: 1220px!important;}  
+  .s3 {height: 1000px!important;}  
+  .s4 {height: 1000px!important;}  
+  .s4 {height: 1000px!important;}  
+  .s5 {height: 800px!important;}  
+}
+
+
+
+@media screen and (max-width:768px) {
+  .phone-absolute{
+    right: 31%;
+    bottom: 12%;
+  }  
+  .connections2{
+    top: 46%;
+    left: 60%;
+  }
+
+  .connections3{
+    top: 76%;
+    left: 60%;
+  }
+
+  .connections5{
+    top: 58%;
+    left: 35%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .phone-absolute {
+    width: 170px;
+    bottom: 17%;
+    right: 36%;
+  } 
+  
+  .cicerone-slide{
+    width: 100%;
+    height: auto;
+  }
+
+  h2, h3{
+    font-size :25px;
+  }
+
   .connections1 img,
   .connections2 img,
   .connections3 img,
@@ -474,151 +709,76 @@ padding: 280px 0 0 50px;
   .connections1, .connections5{
     top: 450%;
   }
-  .grid-esperienze .description li{
-    font-size: 12px;
-  }
 
- 
+  .s5 .phone{
+    width: 200px;
+  }
+  .s5 .circle{
+    width: 225px;
+    height: 225px;
+  }
+}
+
+/* 414 x 853 dp one plus 9 */
+@media screen and (max-width: 414px){
+  .phone-absolute {
+    width: 116px;
+    position: absolute;
+    left: 36%;
+    bottom: 22%;
+  }
+  .cicerone-slide {
+    width: 120%;
+    height: auto;
+  }
 }
 
 
+@media screen and (max-width: 400px) {
 
-@media screen and (max-width: 972px) {
+  .cicerone-slide {
+    width: 105px;
+    height: auto;
+  }
   
-  
-
-  .phone {
-    width: 200px;  
+  .phone{
+    width: 150px;
+    height: auto;
   }
-  .no-phone-view{
-    display: none;
-  }
-  .no-phone-view{
-    display: block;
-  }
-  .grid-container, .grid-ciceroni, .grid-connect, .grid-esperienze{
-    display: flex;    
-    flex-direction: column;
+  .circle{
+    width: 170px;
+    height: 170px;
   }
   .grid-connect{
-    flex-direction: column-reverse;
+    padding: 2rem 3rem
+    }
+    .buttons{
+      padding: 0;
+      
+    }
+    .buttons img{
+      width: 125px;
+    }
+    .phone-absolute {
+        width: 120px;
+        position: absolute;
+        left: 35%;
+        bottom: 18%;
+  }
+  .cicerone-slide {
+    width: 105px;
     height: auto;
+}
+}
+
+
+/* 384 x 853 dp one plus 9 */
+@media screen and (max-width: 384px){
+  .phone-absolute {
+    width: 120px;
+    position: absolute;
+    left: 34%;
+    bottom: 20%;
   }
   
-  .grid-esperienze .description li{
-    font-size: 14px;
-  }
-
-  .facile-intuitivo .phone{
-    width: 300px;
-    display: none;
-  }
-
-  section .titles p {
-    padding: 20px 0 
-  }
-  .phone-container{
-    margin: 2.5rem 0;
-  }
-  .users{
-    padding: 20px;
-    align-self: flex-end;
-  }
-  /* .s2 .list ul {
-    padding: 15px 0 0 25px;
-    position: relative;
-    display: flex;
-} */
-
-/* .phone-absolute{
-  width: 50px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  } */
-  .connections1,
-  .connections2,
-  .connections3,
-  .connections4,
-  .connections5 {
-      position: relative;
-      /* top: 600%; */
-      left: auto;
-      right: auto;
-      margin: 0 0.8rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-
-  .s3 .description {
-    display: none;
-    padding: 0 0 0 50px;
-  }
-  .section h2 {
-    font-size: 40px;
-  }
-  section .titles p {
-    font-size: 20px;
-  }
-  .connections1,
-  .connections2,
-  .connections3,
-  .connections4,
-  .connections5 {
-    width: 80px;
-    height: auto;
-  }
-  .grid-container,  .grid-ciceroni, .grid-connect, .grid-esperienze {
-    padding: 2rem 3rem;
-  }
-
-  .grid-esperienze .description{
-    padding: 0;
-  }
-
-  .grid-esperienze .description h3{
-  padding-left: 30px;
-  padding-bottom: 0;
-}
-  .description {
-    padding-bottom: 50px;
-  }
-  .description h3 {
-    font-size: 30px;
-    padding-bottom: 30px;
-  }
-
-  .description li {
-    font-size: 20px;
-  }
-  .s3 .titles p {
-    width: 110%;
-  }
-
-
-}
-@media screen and (min-width: 1350px) {
-  /* .phone-absolute {
-    right: 350px;
-    bottom: 85px;
-  } */
-
- 
-  .connections1 {
-    top: 35%;
-    left: 3%;
-  }
-  .connections4{
-  top: 80%;
-  left: 0%;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .phone-absolute {
-    right: 518px;
-    bottom: 215px;
-  }
 }
