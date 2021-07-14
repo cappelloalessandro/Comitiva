@@ -131,7 +131,7 @@ section .titles p {
 padding: 280px 0 0 50px;
 }
 
-.users h2{
+.users h3{
   font-size: 35px;
   letter-spacing: 1px;
   color: #fbfbfb;
@@ -616,9 +616,9 @@ padding: 280px 0 0 50px;
   }
 }
 
-/* @media screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .phone-absolute {
-    right: 540px;
-    bottom: 225px;
+    right: 518px;
+    bottom: 215px;
   }
-} */
+}
