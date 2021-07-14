@@ -434,15 +434,20 @@ padding: 280px 0 0 50px;
       width: 125px;
     }
     .phone-absolute {
-      width: 135px;
+      width: 125px;
       position: absolute;
-      left: 120px;
+      left: 115px;
+      bottom: 100px;
       margin: auto;
   }
   .cicerone-slide {
-    width: 130px;
+    width: 105px;
     height: auto;
-}}
+}
+.s3 .titles p {
+  display: none;
+}
+}
 
 @media screen and (max-width: 600px) {
   .phone {
