@@ -1,0 +1,44 @@
+<div class="grid-connect">
+
+
+        <div class="phone-container">
+
+          <div class="connections1 animate__animated animate__infinite	infinite animate__shakeY">
+            <!-- old-lady -->
+            <div class="tooltip">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
+            </div>
+              <img src="img/old-lady.png" alt="old-lady">
+          </div>
+
+          <div class="connections2 animate__animated animate__infinite	infinite animate__shakeY2">
+            <!-- old-man -->
+            <div class="tooltip">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
+            </div>
+              <img src="img/old-man.png" alt="old-lady">
+          </div>
+
+          <div class="connections3 animate__animated animate__infinite	infinite animate__shakeY">
+            <!-- girl -->
+            <div class="tooltip">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
+            </div>
+              <img src="img/girl.png" alt="old-lady">
+          </div>
+
+          <div class="connections4 animate__animated animate__infinite	infinite animate__shakeY">
+            
+            <div class="tooltip">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
+            </div>
+              <img src="img/other-girl.png" alt="old-lady">
+          </div>
+
+          <div class="connections5 animate__animated animate__infinite	infinite animate__shakeY2">
+            <div class="tooltip">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, sit.</p>
+            </div>
+              <img src="img/dude.png" alt="old-lady">
+          </div>
+        </div>
