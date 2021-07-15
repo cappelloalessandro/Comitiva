@@ -326,8 +326,8 @@ padding: 280px 0 0 50px;
   background-color: var(--main);
   width: 230px;
   height: auto;
-  bottom: 150px;
-  left: 20px;
+  /* bottom: 150px; */
+  /* left: 20px; */
   display: none;
   position: absolute;
   border-radius: 4px;
@@ -414,8 +414,8 @@ i{
   display: block;
   transition: linear 2s;
   position: absolute;
-  bottom: 120px;
-  left: 40px;
+  /* bottom: 120px;
+  left: 40px; */
 }
 
 /* dude */
@@ -429,8 +429,8 @@ i{
   display: block;
   transition: linear 2s;
   position: absolute;
-  bottom: 120px;
-  left: 40px;
+  /* bottom: 120px;
+  left: 40px; */
 }
 
 
@@ -715,20 +715,18 @@ i{
     font-size :25px;
   }
 
-  .connections4,
-  .connections3, 
-  .connections1{
-    display: none;
+  .connections3{
+    left: 44%;
   }
+ 
 
   .connections2{
-    left: 10%;
+    left: 50%;
     top: 52%;
   }
   .connections5{
-    top: 70%;
-    bottom:10px;
-    }
+    display: none;
+  }
 
   .s2 .description{
     padding: 0;
