@@ -648,7 +648,20 @@ i{
 
 
 @media screen and (max-width:768px) {
- 
+   /* Modifiche ipad */
+  .no-phone-view{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .no-phone-view li{
+    width: 48%;
+    font-size: 14px;
+  }
+
+  .s5 .phone {
+    width: 200px;
+}
   
   .connections2{
     top: 46%;
