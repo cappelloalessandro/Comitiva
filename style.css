@@ -111,7 +111,6 @@ section,
 }
 
 .phone-container {
-  /* position: relative; */
   justify-content: center;
   display: flex;
   width: auto;
@@ -130,7 +129,6 @@ section,
   flex-direction: column;
   color: #fff;
   align-self: center;
-  /* padding: 350px 0 0 50px; */
   padding: 0 0 0 50px;
 }
 /* prima slide */
@@ -157,6 +155,9 @@ padding: 280px 0 0 50px;
   color: #fbfbfb;
   padding-bottom: 30px;
 }
+.users i{
+  font-size: 24px;
+}
 
 .description ul {
   position: relative;
@@ -165,6 +166,7 @@ padding: 280px 0 0 50px;
 .description li {
   position: relative;
   font-size: 24px;
+  list-style: none;
 }
 
 
@@ -173,8 +175,6 @@ padding: 280px 0 0 50px;
 }
 
 /* Seconda slide */
-
-
 
 .list {
   position: relative;
@@ -271,14 +271,6 @@ padding: 280px 0 0 50px;
   width: 100%;
   height: 100%;
 }
-
-/* .phone-absolute {
-  position: absolute;
-  right: 410px;
-  bottom: 75px;
-  z-index: 999;
-  pointer-events: none;
-} */
 
 /* giusto */
 .phone-absolute {
@@ -459,7 +451,7 @@ i{
 .btn{
   cursor: pointer;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   padding: 10px 20px;
   background-color: var(--bianco);
   color: var(--main);
@@ -510,33 +502,6 @@ i{
 
 
 /* MEDIA */
-
-
-/* POSIZIONE TELEFONO SLIDER 1200 x 992 */
-/* @media screen and (min-width: 1200px) {
-  .phone-absolute {
-    right: 270px;
-    bottom: 165px;
-  }
-} */
-/* 
-@media screen and (min-width: 1350px) {
-  .phone-absolute {
-    right: 350px;
-    bottom: 85px;
-  }
-} */
-
-
-/* POSIZIONE TELEFONO SLIDER 1920PX x 1210 */
-/* @media screen and (min-width: 1600px) {
-  .phone-absolute {
-    right: 518px;
-    bottom: 215px;
-  }
-} */
-
-
 
 @media screen and (max-width: 1200px) {
     .s3 .description {
@@ -637,7 +602,7 @@ i{
   }
 
   .phone-container{
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
   }
   .users{
     padding: 20px;
@@ -663,11 +628,11 @@ i{
 
 
 @media screen and (max-width:800px){
-  .s1 {height: 100vh!important;}  
-  .s2 {height: 100vh!important;}  
-  .s3 {height: 100vh!important;}  
-  .s4 {height: 100vh!important;}  
-  .s5 {height: 100vh!important;}
+  .s1 {height: 90vh!important;}  
+  .s2 {height: 90vh!important;}  
+  .s3 {height: 90vh!important;}  
+  .s4 {height: 90vh!important;}  
+  .s5 {height: 90vh!important;}
   
   .phone-absolute{
     width: 225px;
@@ -685,7 +650,6 @@ i{
 @media screen and (max-width:768px) {
  
   
-
   .connections2{
     top: 46%;
     left: 60%;
@@ -707,15 +671,24 @@ i{
     font-size: 28px;
   }
 
-  .users{
-    margin-top: -30px;
+  .hide-mobile{
+    display: none;
+  }
+
+  .users{ 
+    margin-top: -10px;
     padding: 0;
+    align-self: center;
+    text-align: center;
+  }
+  .users li{
+    padding: 5px 0;
   }
   .users h3{
     padding-bottom: 10px;    
   }
   .phone{
-    width: 170px;
+    width: 150px;
   }
   .circle{
     width: 260px;
@@ -738,30 +711,25 @@ i{
 }
 
 @media screen and (max-width: 600px) {
-
-  /* .phone-absolute {
-    width: 170px;
-    bottom: 17%;
-    right: 36%;
-  }  */
-/*   
-  .cicerone-slide{
-    width: 100%;
-    height: auto;
-  } */
-
   h2, h3{
     font-size :25px;
   }
 
-  .connections1 img,
-  .connections2 img,
-  .connections3 img,
-  .connections4 img,
-  .connections5 img{
-    width: 90px;
-    height: auto;
+  .connections4,
+  .connections3, 
+  .connections1{
+    display: none;
   }
+
+  .connections2{
+    left: 10%;
+    top: 52%;
+  }
+  .connections5{
+    top: 70%;
+    bottom:10px;
+    }
+
   .s2 .description{
     padding: 0;
   }
@@ -781,27 +749,7 @@ i{
   }
 }
 
-/* 414 x 853 dp one plus 9 */
-/* @media screen and (max-width: 414px){
-  .phone-absolute {
-    width: 116px;
-    position: absolute;
-    left: 36%;
-    bottom: 22%;
-  }
-  .cicerone-slide {
-    width: 120%;
-    height: auto;
-  }
-} */
-
-
 @media screen and (max-width: 400px) {
-
-  /* .cicerone-slide {
-    width: 105px;
-    height: auto;
-  } */
   
   .phone{
     width: 150px;
@@ -821,26 +769,4 @@ i{
     .buttons img{
       width: 125px;
     }
-    /* .phone-absolute {
-        width: 120px;
-        position: absolute;
-        left: 35%;
-        bottom: 18%;
   }
-  .cicerone-slide {
-    width: 105px;
-    height: auto;
-} */
-}
-
-
-/* 384 x 853 dp one plus 9 */
-/* @media screen and (max-width: 384px){
-  .phone-absolute {
-    width: 120px;
-    position: absolute;
-    left: 34%;
-    bottom: 20%;
-  }
-  
-} */
