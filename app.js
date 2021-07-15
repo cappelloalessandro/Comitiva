@@ -15,11 +15,16 @@ new fullpage("#fullpage", {
     const title = section.querySelector("h2");
     const lista = section.querySelectorAll("li");
     const description = document.querySelectorAll("p");
+    const subtitle = document.querySelectorAll("h3")
+    const button = document.querySelectorAll(".btn")
 
     const tl = new TimelineMax({ delay: 0.5 });
     tl.fromTo(title, 0.5, { y: "50", opacity: 0 }, { y: "0", opacity: 1 })
+    tl.fromTo(subtitle, 0.5, { y: "50", opacity: 0 }, { y: "0", opacity: 1 })
     tl.fromTo(description, 0.5, { opacity: 0, y: "50" }, { y: "0", opacity: 1 })
-    tl.fromTo(lista, 0.1, { opacity: 0, y: "20" }, { y: "0", opacity: 1 }
+    tl.fromTo(lista, 0.1, { opacity: 0, y: "20" }, { y: "0", opacity: 1 })
+    tl.fromTo(button, 0.5, { opacity: 0, x: "50" }, { x: "0", opacity: 1 }
+    
     );
   }
 });
