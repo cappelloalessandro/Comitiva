@@ -251,8 +251,9 @@ padding: 280px 0 0 50px;
 /* terza slide */
 
 .grid-ciceroni {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -608,8 +609,6 @@ i{
     padding: 20px;
     align-self: flex-end;
   }
-
-
   .connections2{
     top: 46%;
     left: 50%;
@@ -649,6 +648,9 @@ i{
 
 @media screen and (max-width:768px) {
    /* Modifiche ipad */
+   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+     display: none;
+  }
   .no-phone-view{
     display: flex;
     flex-wrap: wrap;
@@ -761,7 +763,9 @@ i{
 }
 
 @media screen and (max-width: 400px) {
-  
+  section .titles p {
+    padding-bottom: 5px;
+  }
   .phone{
     width: 150px;
     height: auto;
